@@ -96,7 +96,7 @@ class OpenhabAction(CustomBaseModel):
 class HttpGetAction(CustomBaseModel):
     """Action for a Http Get-Request.""" ""
 
-    type: Literal["httpget"]
+    type: Literal["HttpGet"]
     summary: Optional[SummaryType] = None
     path: str
     item: str
