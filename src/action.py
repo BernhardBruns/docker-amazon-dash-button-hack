@@ -163,7 +163,7 @@ class Action:
         openhab = OpenHab(self.settings)
         openhab.press(action_params)
 
-       def httpget_action(
+    def httpget_action(
         self, button: str, action_params: models.HttpGetAction  # pylint: disable=unused-argument
     ) -> None:
         """Register event in HttpGet."""
