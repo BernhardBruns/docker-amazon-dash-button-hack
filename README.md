@@ -1,3 +1,5 @@
+Fork: add type "httpget" to make a simple http-get request e.g. for home assistant automatation
+
 [![Build Status](https://github.com/andgineer/docker-amazon-dash-button-hack/workflows/ci/badge.svg)](https://github.com/andgineer/docker-amazon-dash-button-hack/actions)[![Docker Automated build](https://img.shields.io/docker/image-size/andgineer/amazon-dash-button-hack)](https://hub.docker.com/r/andgineer/amazon-dash-button-hack)
 
 This is a [Docker Hub container](https://hub.docker.com/r/andgineer/amazon-dash-button-hack)
