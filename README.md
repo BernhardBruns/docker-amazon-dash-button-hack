@@ -10,9 +10,9 @@
 | src/google\_calendar.py |       74 |       26 |     65% |34-45, 116, 119, 164-185 |
 | src/google\_sheet.py    |       87 |        9 |     90% |134-137, 279-285 |
 | src/ifttt.py            |       28 |        5 |     82% |     48-53 |
-| src/models.py           |       70 |        0 |    100% |           |
+| src/models.py           |       76 |        0 |    100% |           |
 | src/openhab.py          |       23 |        0 |    100% |           |
-|               **TOTAL** |  **491** |   **65** | **87%** |           |
+|               **TOTAL** |  **497** |   **65** | **87%** |           |
 
 
 ## Setup coverage badge
