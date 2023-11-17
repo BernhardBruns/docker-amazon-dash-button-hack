@@ -42,6 +42,10 @@ class OpenHab:
             return
 
         command_idx = (current_idx + 1) % 2  # switch between two states
+        
+        'DEBUG TRY A GET'
+        requests.get(action_params.path)
+        'DEBUG
         requests.post(
             base_url,
             data=json.dumps(commands[command_idx]),
