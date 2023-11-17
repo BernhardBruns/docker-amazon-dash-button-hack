@@ -12,7 +12,7 @@ class HttpGet:
         """Init."""
         self.settings = settings
 
-    def press(self, action_params: models.HttpGet) -> None:
+    def press(self, action_params: models.HttpGetAction) -> None:
        
               
         requests.get(action_params.path)
