@@ -135,6 +135,12 @@
           "path": "http://localhost:8080",
           "item": "{button}_amazon_dash",
           "command": "ON;OFF"
+        },
+        {
+          "type": "httpget",
+          "path": "http://homeassistant:8123/api/webhook/123456",
+          "item": "empty",
+          "command": "empty"
         }
       ]
     }
