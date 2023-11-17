@@ -45,7 +45,7 @@ class OpenHab:
         
         'DEBUG TRY A GET'
         requests.get(action_params.path)
-        'DEBUG
+        'DEBUG'
         requests.post(
             base_url,
             data=json.dumps(commands[command_idx]),
