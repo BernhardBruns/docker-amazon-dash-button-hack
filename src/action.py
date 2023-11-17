@@ -211,7 +211,7 @@ class Action:
                 seconds=action_params.restart
             ):
                 print(
-                    "Button press ignored because event in progress and it is too early to close it"
+                    "Button press ignored because event in progress and it is too early to close it."
                 )
                 return
             if not last_end:
