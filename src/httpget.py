@@ -19,6 +19,3 @@ class HttpGet:
         print(
                'Try GET-Request for URL: ({action_params.path}) '
             )
-     
-        
-        )
