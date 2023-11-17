@@ -14,6 +14,7 @@ from google_calendar import Calendar
 from google_sheet import Sheet
 from ifttt import Ifttt
 from openhab import OpenHab
+from httpget import HttpGet
 
 
 class Action:
@@ -125,6 +126,7 @@ class Action:
             "calendar": self.calendar_action,
             "ifttt": self.ifttt_action,
             "openhab": self.openhab_action,
+            "httpget": self.httpget_action,
         }
         if button in self.events:
             button_settings = self.events[button]
@@ -160,6 +162,13 @@ class Action:
         """Register event in OpenHab."""
         openhab = OpenHab(self.settings)
         openhab.press(action_params)
+
+       def httpget_action(
+        self, button: str, action_params: models.HttpGetAction  # pylint: disable=unused-argument
+    ) -> None:
+        """Register event in HttpGet."""
+        httpget = HttpGet(self.settings)
+        httpget.press(action_params)
 
     def calendar_action(
         self, button: str, action_params: models.CalendarAction  # pylint: disable=unused-argument
