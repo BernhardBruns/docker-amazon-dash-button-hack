@@ -93,8 +93,17 @@ class OpenhabAction(CustomBaseModel):
     item: str
     command: str
 
+class HttpGetAction(CustomBaseModel):
+    """Action for a Http Get-Request.""" ""
 
-ActionItem = Union[SheetAction, CalendarAction, IftttAction, OpenhabAction]
+    type: Literal["httpget"]
+    summary: Optional[SummaryType] = None
+    path: str
+    item: str
+    command: str
+
+
+ActionItem = Union[SheetAction, CalendarAction, IftttAction, OpenhabAction, HttpGetAction]
 ActionItemLoad = TypeAdapter(ActionItem).validate_python
 
 
