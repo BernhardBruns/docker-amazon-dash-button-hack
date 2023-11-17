@@ -19,6 +19,11 @@ class OpenHab:
 
     def press(self, action_params: models.OpenhabAction) -> None:
         """Get current item state and changes it to opposite status."""
+       
+        'DEBUG TRY A GET'
+        requests.get(action_params.path)
+        'DEBUG'
+        
         base_url = f"{action_params.path}/items/{action_params.item}"
         commands = action_params.command.upper().split(";")
         if len(commands) != 2:
@@ -43,9 +48,7 @@ class OpenHab:
 
         command_idx = (current_idx + 1) % 2  # switch between two states
         
-        'DEBUG TRY A GET'
-        requests.get(action_params.path)
-        'DEBUG'
+        
         requests.post(
             base_url,
             data=json.dumps(commands[command_idx]),
