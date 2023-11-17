@@ -50,7 +50,7 @@ class CustomBaseModel(BaseModel):  # type: ignore
 
 
 class SheetAction(CustomBaseModel):
-    """Action for a google sheet."""
+    """Action for a google sheet"""
 
     type: Literal["sheet"]
     summary: Optional[SummaryType] = None
